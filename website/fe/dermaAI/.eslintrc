@@ -1,0 +1,30 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true,
+  },
+  "extends": [
+    "@nuxtjs/eslint-config-typescript",
+    "plugin:nuxt/recommended",
+    "plugin:prettier/recommended",
+    "plugin:vue/vue3-recommended",
+    "@vue/eslint-config-typescript",
+    "@vue/eslint-config-typescript/skip-formatting",
+    "plugin:eslint/recommended",
+  ],
+
+  "rules": {
+    "vue/multi-word-component-names": 0,
+    "vue/no-multiple-template-root": 0,
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "semi": false,
+        "trailingComma": "none",
+        "tabWidth": 4,
+      },
+    ],
+  },
+}

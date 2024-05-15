@@ -1,4 +1,4 @@
-from app.extensions import model
+from app.extensions import model, treatmentDict
 from keras.models import load_model
 from flask import Flask, render_template, request, jsonify, abort
 from tensorflow.keras.preprocessing.image import img_to_array,load_img
@@ -8,6 +8,7 @@ from PIL import Image
 import io
 import os
 import cv2
+
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in {'png', 'jpg', 'jpeg'}
 def is_skin(img):
@@ -35,7 +36,7 @@ def is_skin(img):
     skin_percent = skin_pixels / (img.shape[0] * img.shape[1]) 
     # return True if skin percentage is above a threshold, else False
     print(skin_percent)
-    return skin_percent > 0.5
+    return skin_percent > 0.2
 class DetectService:
     def Detect(image):
         class_names = ['AK', 'BCC', 'BKL', 'DF', 'MEL', 'NV', 'SCC', 'VASC', 'acne', 'eczema', 'not_infected']
@@ -43,7 +44,7 @@ class DetectService:
             return abort(400, 'Only image files are allowed')
         image = Image.open(image)
         if not is_skin(np.array(image)):
-            return jsonify({'error': 'No skin detected'})
+            return abort(400, 'Image is not skin')
         # Preprocess the image
         image = image.resize((300,300))
         # convert rgb color
@@ -52,5 +53,11 @@ class DetectService:
         image = img_array / 255.0
         image = np.expand_dims(image, axis=0)
         result = model.predict(image)
-        result = dict(zip(class_names, result[0].tolist()))
+        result = result[0].tolist()
+        result= [round(i*100, 2) for i in result]
+        result = dict(zip(class_names, result))
         return jsonify(result)
+    def GetTreatment(disease):
+        if disease not in treatmentDict:
+            return abort(404, 'Treatment not found')
+        return jsonify(treatmentDict[disease])
