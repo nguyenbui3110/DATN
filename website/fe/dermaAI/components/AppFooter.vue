@@ -1,5 +1,5 @@
 <template>
-  <footer class="block bg-slate-300 min-h-10 mt-auto mx-20 shadow-inner opacity-80">
+  <footer class="block bg-slate-300 min-h-10 mt-auto lg:mx-52 shadow-inner opacity-80 sm:mx-0 ">
 
     <div class=" flex justify-between min-h-10 ">
       <div class="justify-start min-h-10">

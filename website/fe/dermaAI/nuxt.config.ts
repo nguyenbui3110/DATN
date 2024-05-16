@@ -12,7 +12,7 @@ export default defineNuxtConfig({
     },
   },
   colorMode: {
-    preference: 'light',
+    preference: 'Light',
   },
   pinia: {
     storesDirs: ['./stores/**', './custom-folder/stores/**'],
@@ -21,5 +21,18 @@ export default defineNuxtConfig({
     public: {
       apiBase: 'http://localhost:5000/api',
     },
+  },
+  head: {
+    title: 'Derma AI',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Derma AI Description',
+      },
+    ],
+  },
+  server: {
+    host: '0.0.0.0',
   },
 });

@@ -1,29 +1,39 @@
 <template>
-  <div class="flex flex-col items-center justify-start backdrop-blur-lg mx-40 my-10 min-h-60">
-    <UTable v-if="rows.length !== 0" :columns="columns" :rows="rows" class="w-2/3 backdrop-blur-md " />
+  <div class="flex flex-col items-center justify-start backdrop-blur-xl lg:mx-40 my-10 min-h-60 sm:m-0 text-black">
+    <strong class="text-6xl">RESULT</strong>
+    <UTable v-if="rows.length !== 0" :columns="columns" :rows="rows" class="w-2/3 " />
     <!-- show disease and treatment with treatment object -->
-    <div v-if="rows.length !== 0" class="flex-col justify-start min-h-32">
-      <h1 class="text-2xl font-bold text-gray-800">Treatment</h1>
-      <h1 class="text-2xl font-bold text-gray-800"> {{ treatment.name }}</h1>
-      <li v-for="item in treatment.treatment" :key="item" class="text-lg font-bold text-gray-800">{{ item }}</li>
+    <div v-if="rows.length !== 0" class="flex-col justify-start min-h-32 r">
+      <h1 class="text-2xl ">Predict: <strong>{{ treatment.name }}</strong></h1>
+      <h1 class="text-2xl "> Treatment:</h1>
+      <ul class="list-disc">
+        <li v-for="item in treatment.treatment" :key="item" class="text-lg  mx-5">{{ item }}</li>
+      </ul>
+      <i class="mt-4">Disclaimer: This information is provided for educational purposes only and should not be used as a
+        substitute
+        for medical advice. Please consult a healthcare professional for an accurate diagnosis and treatment plan.</i>
     </div>
 
     <div v-else>
       <div class="flex justify-start min-h-32">
-        <h1 class="text-2xl font-bold text-gray-800">No data available</h1>
+        <h1 class="text-2xl font-bold ">No data available</h1>
         <!-- return homepage -->
       </div>
-      <div class="flex justify-end">
-        <UButton size="xl" to="/" label="Return to homepage" />
+      <div class="flex justify-center">
+        <UButton size="xl" to="/" label="Return to homepage" class="my-5" />
 
       </div>
+
     </div>
+
   </div>
 </template>
 
 <script lang="ts" setup>
 const store = useDataStore()
 const fetchStore = useFetchStore()
+const colorMode = useColorMode()
+colorMode.value = 'Light'
 const columns = [{
   key: 'AK',
   label: 'AK'
@@ -80,6 +90,9 @@ console.log(result);
 if (Object.keys(result).length !== 0) {
   rows.push(result)
 }
+
+console.log(result);
+
 console.log(rows.length);
 
 
@@ -87,4 +100,6 @@ console.log(rows.length);
 
 </script>
 
-<style></style>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+</style>
