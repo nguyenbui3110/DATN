@@ -19,20 +19,7 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      apiBase: 'http://localhost:5000/api',
+      apiBase: process.env.API_BASE || 'https://api.nuxtjs.dev',
     },
-  },
-  head: {
-    title: 'Derma AI',
-    meta: [
-      {
-        hid: 'description',
-        name: 'description',
-        content: 'Derma AI Description',
-      },
-    ],
-  },
-  server: {
-    host: '0.0.0.0',
   },
 });

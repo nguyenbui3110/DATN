@@ -15,7 +15,7 @@
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@nuxt/eslint": "^0.3.12",
-    "@nuxt/ui": "^2.13.0",
+    "@nuxt/ui": "npm:@nuxt/ui-edge@latest",
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",

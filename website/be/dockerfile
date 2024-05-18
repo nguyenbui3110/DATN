@@ -8,7 +8,9 @@ WORKDIR /app
 COPY . .
 
 # Install the dependencies
+RUN  apt-get update && apt-get install python3-opencv -y
 RUN pip install --no-cache-dir -r requirements.txt
+
 
 # Expose the port on which the Flask app will run
 EXPOSE 5000
