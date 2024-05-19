@@ -4,15 +4,16 @@
     <div class="mt-7 max-w-sm mx-auto text-center backdrop-blur-md card roboto-bold">
       <h1 class="mt-7 text-7xl font-bold">{{ error.statusCode }}</h1>
       <p class="mt-5 text-3xl">{{ error.message }}</p>
-      <UButton to="/" label="Return home page" size="xl" class="mt-5" />
+      <UButton @click="handleClearError" label="Return home page" size="xl" class="mt-5" />
     </div>
   </NuxtLayout>
 </template>
 
 <script lang="ts" setup>
+const error = useError()
+// defineProps(['error'])
 
-defineProps(['error'])
-
+const handleClearError = () => clearError({ redirect: "/" })
 
 </script>
 

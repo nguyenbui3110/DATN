@@ -24,9 +24,9 @@
       </div>
     </div>
     <div class="flex justify-between text-gray-500 text-l min-h-20 font-mono">
-      <div class="start">
-        <p class="text-center">
-          <span class="font-mono">© 2024 Derma AI. All rights reserved</span>
+      <div class="flex start mr-6">
+        <p class="text-left mr-6">
+          <span class="font-mono mr-6">© 2024 Derma AI. All rights reserved</span>
         </p>
       </div>
       <div class="flex end w-1/3 justify-end">
