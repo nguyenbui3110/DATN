@@ -16,7 +16,7 @@ def is_skin(img):
     img = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
     img_HSV = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
     #skin color range for hsv color space 
-    HSV_mask = cv2.inRange(img_HSV, (0, 5, 0), (17,170,255)) 
+    HSV_mask = cv2.inRange(img_HSV, (0, 0, 0), (26,170,255)) 
     HSV_mask = cv2.morphologyEx(HSV_mask, cv2.MORPH_OPEN, np.ones((3,3), np.uint8))
 
     #converting from gbr to YCbCr color space
@@ -36,7 +36,7 @@ def is_skin(img):
     skin_percent = skin_pixels / (img.shape[0] * img.shape[1]) 
     # return True if skin percentage is above a threshold, else False
     print(skin_percent)
-    return skin_percent > 0.2
+    return skin_percent > 0.3
 class DetectService:
     def Detect(image):
         class_names = ['AK', 'BCC', 'BKL', 'DF', 'MEL', 'NV', 'SCC', 'VASC', 'acne', 'eczema', 'not_infected']

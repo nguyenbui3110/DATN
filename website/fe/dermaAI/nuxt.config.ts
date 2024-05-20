@@ -22,4 +22,16 @@ export default defineNuxtConfig({
       apiBase: process.env.API_BASE || 'https://api.nuxtjs.dev',
     },
   },
+  app: {
+    head: {
+      title: 'Derma AI',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Derma AI Description',
+        },
+      ],
+    },
+  },
 });

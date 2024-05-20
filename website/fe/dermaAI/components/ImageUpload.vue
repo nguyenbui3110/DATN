@@ -60,7 +60,12 @@ const uploadImage = async () => {
   if (fetchStore.statusCode != 200) {
     console.error('Error uploading image:', fetchStore.error)
     dataStore.error = fetchStore.error
-    alert(`Error uploading image: ${fetchStore.error.message}`, fetchStore.error.message)
+    var message = fetchStore.error.message
+    file.value = null
+    fetchStore.$reset()
+    alert(`Error uploading image: ${message}`, message)
+
+    clearError({ redirect: '/' })
     // router.push({ path: '/error' })
     return
   }
