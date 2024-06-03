@@ -1,102 +1,102 @@
 {
-    "eczema": {
-        "name": "eczema",
-        "treatment": [
-            "Topical corticosteroids - reduce inflammation and itching.",
-            "Topical calcineurin inhibitors (such as tacrolimus or pimecrolimus) - reduce inflammation and itching, particularly for sensitive areas like the face and neck.",
-            "Topical phosphodiesterase-4 inhibitors (such as crisaborole) - reduce inflammation and itching.",
-            "Topical barrier repair creams - help repair and protect the skin barrier."
-        ]
-    },
-    "acne":{
-        "name":"acne",
-        "treatment":[
-            "Topical retinoids (such as tretinoin) - helps unclog pores and prevent new acne lesions from forming.",
-            "Benzoyl peroxide - kills bacteria and reduces inflammation.",
-            "Salicylic acid - helps unclog pores and reduces inflammation.",
-            "Topical antibiotics (such as clindamycin) - helps kill bacteria and reduce inflammation.",
-            "Oral antibiotics (such as doxycycline) - helps kill bacteria and reduce inflammation."
-        ]
-    },
-    "BCC":{
-        "name":"Basal cell carcinoma",
-        "treatment":[
-            "Surgical excision - removal of the tumor and surrounding tissue.",
-            "Mohs surgery - a specialized procedure to remove the cancerous tissue layer by layer, minimizing damage to healthy tissue.",
-            "Radiation therapy - using high-energy radiation to destroy cancer cells.",
-            "Topical chemotherapy - applying a cream or lotion containing medication to kill cancer cells."
-        ]
-    },
-    "BKL":{
-        "name":"Benign Keratosis-like Lesions (BKL)",
-        "treatment":[
-            "Cryotherapy - using liquid nitrogen to freeze off the lesion.",
-            "Electrodesiccation and curettage - scraping off the lesion and using an electric needle to destroy any remaining cells.",
-            "Topical medications (such as imiquimod) - stimulates the immune system to attack the lesion.",
-            "Shave excision - shaving off the lesion with a surgical blade."
-        ]
-    },
-    "DF":{
-        "name":"Dermatofibroma",
-        "treatment":[
-            "Surgical excision - removal of the dermatofibroma and surrounding tissue.",
-            "Cryotherapy - using liquid nitrogen to freeze off the dermatofibroma.",
-            "Laser therapy - using a laser to destroy the dermatofibroma.",
-            "Shave excision - shaving off the dermatofibroma with a surgical blade."
-        ]
-    },
-    "AK":{
-        "name":"Actinic keratosis(AK)",
-        "treatment":[
-            "Cryotherapy - using liquid nitrogen to freeze off the lesion.",
-            "Topical medications (such as imiquimod) - stimulates the immune system to attack the lesion.",
-            "Chemical peels - applying a chemical solution to the skin to remove the lesion.",
-            "Photodynamic therapy - applying a medication to the skin that is activated by light to destroy the lesion."
-        ]
-    },
-    "SCC":{
-        "name":"Squamous Cell Carcinoma",
-        "treatment":[
-            "Surgical excision - removal of the tumor and surrounding tissue.",
-            "Mohs surgery - a specialized procedure to remove the cancerous tissue layer by layer, minimizing damage to healthy tissue.",
-            "Radiation therapy - using high-energy radiation to destroy cancer cells.",
-            "Topical chemotherapy - applying a cream or lotion containing medication to kill cancer cells."
-        ]
-    },
-    "VASC":{
-        "name":"Vascular Lesions",
-        "treatment":[
-            "Laser therapy - using a laser to target and destroy the blood vessels causing the lesion.",
-            "Sclerotherapy - injecting a solution into the blood vessels to cause them to collapse and fade.",
-            "Electrocautery - using an electric needle to destroy the blood vessels causing the lesion.",
-            "Surgical excision - removal of the lesion and surrounding tissue."
-        ]
-    },
-    "MEL":{
-        "name":"Melanoma",
-        "treatment":[
-            "Surgical excision - removing the tumor and surrounding tissue.",
-            "Immunotherapy - using medications to stimulate the immune system to attack cancer cells.",
-            "Chemotherapy - using medications to kill cancer cells.",
-            "Radiation therapy - using high-energy radiation to destroy cancer cells."
-        ]
-    },
-    "NV":{
-        "name":"Nevi",
-        "treatment":[
-            "Monitoring for changes in size, shape, or color - to detect any potential signs of melanoma.",
-            "Surgical excision - removal of the nevus if it is atypical or concerning for melanoma.",
-            "Laser therapy - using a laser to remove the nevus.",
-            "Cryotherapy - using liquid nitrogen to freeze off the nevus."
-        ]
-    },
-    "not_infected":{
-        "name":"Not Infected",
-        "treatment":[
-            "Regular skin care routine - cleansing, moisturizing, and protecting the skin from sun damage.",
-            "Avoiding triggers - such as allergens or irritants that can worsen skin conditions.",
-            "Using gentle skincare products - to avoid further irritation or inflammation.",
-            "Seeking medical advice - if symptoms persist or worsen, or if new skin concerns arise."
-        ]
-    }
+  "eczema": {
+    "name": "eczema (chàm da)",
+    "treatment": [
+      "Topical corticosteroids - giảm viêm và ngứa.",
+      "Topical calcineurin inhibitors (như tacrolimus hoặc pimecrolimus) - giảm viêm và ngứa, đặc biệt là ở các khu vực nhạy cảm như mặt và cổ.",
+      "Topical phosphodiesterase-4 inhibitors (như crisaborole) - giảm viêm và ngứa.",
+      "Topical barrier repair creams - giúp phục hồi và bảo vệ hàng rào da."
+    ]
+  },
+  "acne": {
+    "name": "acne (mụn trứng cá)",
+    "treatment": [
+      "Topical retinoids (như tretinoin) - giúp thông thoáng lỗ chân lông và ngăn ngừa sự hình thành mụn mới.",
+      "Benzoyl peroxide - diệt khuẩn và giảm viêm.",
+      "Salicylic acid - giúp thông thoáng lỗ chân lông và giảm viêm.",
+      "Topical antibiotics (như clindamycin) - giúp diệt khuẩn và giảm viêm.",
+      "Oral antibiotics (như doxycycline) - giúp diệt khuẩn và giảm viêm."
+    ]
+  },
+  "BCC": {
+    "name": "Basal cell carcinoma (ung thư biểu mô tế bào đáy)",
+    "treatment": [
+      "Surgical excision - loại bỏ khối u và mô xung quanh.",
+      "Mohs surgery - loại bỏ mô ung thư từng lớp một, giảm thiểu tổn thương mô lành.",
+      "Radiation therapy - sử dụng bức xạ năng lượng cao để tiêu diệt tế bào ung thư.",
+      "Topical chemotherapy - sử dụng kem hoặc lotion chứa thuốc để diệt tế bào ung thư."
+    ]
+  },
+  "BKL": {
+    "name": "Benign Keratosis-like Lesions (BKL) - Tổn thương giống dày sừng lành tính",
+    "treatment": [
+      "Cryotherapy - sử dụng nitơ lỏng để làm đông lạnh và loại bỏ tổn thương.",
+      "Electrodesiccation and curettage - cạo bỏ tổn thương và sử dụng kim điện để phá hủy các tế bào còn lại.",
+      "Topical medications (như imiquimod) - kích thích hệ miễn dịch tấn công tổn thương.",
+      "Shave excision - cạo bỏ tổn thương bằng dao phẫu thuật."
+    ]
+  },
+  "DF": {
+    "name": "Dermatofibroma (u xơ da)",
+    "treatment": [
+      "Surgical excision - loại bỏ u xơ và mô xung quanh.",
+      "Cryotherapy - sử dụng nitơ lỏng để làm đông lạnh và loại bỏ u xơ.",
+      "Laser therapy - sử dụng laser để phá hủy u xơ.",
+      "Shave excision - cạo bỏ u xơ bằng dao phẫu thuật."
+    ]
+  },
+  "AK": {
+    "name": "Actinic keratosis (AK) - dày sừng quang hóa",
+    "treatment": [
+      "Cryotherapy - sử dụng nitơ lỏng để làm đông lạnh và loại bỏ tổn thương.",
+      "Topical medications (như imiquimod) - kích thích hệ miễn dịch tấn công tổn thương.",
+      "Chemical peels - sử dụng dung dịch hóa học để loại bỏ tổn thương.",
+      "Photodynamic therapy - sử dụng thuốc và ánh sáng để phá hủy tổn thương."
+    ]
+  },
+  "SCC": {
+    "name": "Squamous Cell Carcinoma (ung thư biểu mô tế bào vảy)",
+    "treatment": [
+      "Surgical excision - loại bỏ khối u và mô xung quanh.",
+      "Mohs surgery - loại bỏ mô ung thư từng lớp một, giảm thiểu tổn thương mô lành.",
+      "Radiation therapy - sử dụng bức xạ năng lượng cao để tiêu diệt tế bào ung thư.",
+      "Topical chemotherapy - sử dụng kem hoặc lotion chứa thuốc để diệt tế bào ung thư."
+    ]
+  },
+  "VASC": {
+    "name": "Vascular Lesions (tổn thương mạch máu)",
+    "treatment": [
+      "Laser therapy - sử dụng laser để phá hủy các mạch máu gây ra tổn thương.",
+      "Sclerotherapy - tiêm dung dịch vào mạch máu để làm cho chúng co lại và biến mất.",
+      "Electrocautery - sử dụng kim điện để phá hủy các mạch máu gây ra tổn thương.",
+      "Surgical excision - loại bỏ tổn thương và mô xung quanh."
+    ]
+  },
+  "MEL": {
+    "name": "Melanoma (ung thư hắc tố)",
+    "treatment": [
+      "Surgical excision - loại bỏ khối u và mô xung quanh.",
+      "Immunotherapy - sử dụng thuốc kích thích hệ miễn dịch tấn công tế bào ung thư.",
+      "Chemotherapy - sử dụng thuốc để tiêu diệt tế bào ung thư.",
+      "Radiation therapy - sử dụng bức xạ năng lượng cao để tiêu diệt tế bào ung thư."
+    ]
+  },
+  "NV": {
+    "name": "Nevi (nốt ruồi)",
+    "treatment": [
+      "Monitoring for changes in size, shape, or color - theo dõi các thay đổi về kích thước, hình dạng hoặc màu sắc để phát hiện các dấu hiệu tiềm ẩn của ung thư hắc tố.",
+      "Surgical excision - loại bỏ nốt ruồi nếu nó không điển hình hoặc có dấu hiệu ung thư.",
+      "Laser therapy - sử dụng laser để loại bỏ nốt ruồi.",
+      "Cryotherapy - sử dụng nitơ lỏng để làm đông lạnh và loại bỏ nốt ruồi."
+    ]
+  },
+  "not_infected": {
+    "name": "Not Infected (không bị nhiễm trùng)",
+    "treatment": [
+      "Regular skin care routine - chăm sóc da đều đặn - làm sạch, dưỡng ẩm và bảo vệ da khỏi tác hại của ánh nắng.",
+      "Avoiding triggers - tránh các tác nhân gây kích ứng hoặc dị ứng có thể làm tình trạng da xấu đi.",
+      "Using gentle skincare products - sử dụng các sản phẩm chăm sóc da nhẹ nhàng để tránh gây kích ứng hoặc viêm.",
+      "Seeking medical advice - tham khảo ý kiến bác sĩ nếu triệu chứng kéo dài hoặc tồi tệ hơn, hoặc nếu xuất hiện các vấn đề da mới."
+    ]
+  }
 }

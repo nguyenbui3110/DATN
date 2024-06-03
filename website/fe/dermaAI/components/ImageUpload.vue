@@ -1,15 +1,17 @@
 <template>
   <div class="p-4 max-w-md mx-auto">
-    <input type="file" @change="onFileChange" accept="image/*" class="mb-4 block w-full text-sm text-gray-500
+    <input
+type="file" accept="image/*" class="mb-4 block w-full text-sm text-gray-500
              file:mr-4 file:py-2 file:px-4
              file:rounded-full file:border-0
              file:text-sm file:font-semibold
              file:bg-blue-50 file:text-blue-700
-             hover:file:bg-blue-100" />
+             hover:file:bg-blue-100" @change="onFileChange" >
     <div v-if="previewUrl" class="mt-4">
-      <img :src="previewUrl" alt="Image Preview" class="max-w-full h-auto rounded-lg shadow-md" />
+      <img :src="previewUrl" alt="Image Preview" class="max-w-full h-auto rounded-lg shadow-md" >
     </div>
     <UButton :size="xl" :ui="{ rounded: 'rounded-full' }" @click="uploadImage"> Upload Image </UButton>
+    <LoadingOverlay v-if="fetchStore.loading" />
   </div>
 </template>
 
@@ -60,7 +62,7 @@ const uploadImage = async () => {
   if (fetchStore.statusCode != 200) {
     console.error('Error uploading image:', fetchStore.error)
     dataStore.error = fetchStore.error
-    var message = fetchStore.error.message
+    const message = fetchStore.error.message
     file.value = null
     fetchStore.$reset()
     alert(`Error uploading image: ${message}`, message)

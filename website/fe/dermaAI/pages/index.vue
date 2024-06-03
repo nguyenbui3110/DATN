@@ -10,7 +10,8 @@
       </div>
     </div>
     <div class="flex items-center justify-center  text-3xl font-bold text-black">How to use Derma AI </div>
-    <UCarousel v-slot="{ item }" :items="items" :ui="{ item: 'basis-full md:basis-1/2 lg:basis-1/3' }" indicators
+    <UCarousel
+v-slot="{ item }" :items="items" :ui="{ item: 'basis-full md:basis-1/2 lg:basis-1/3' }" indicators
       class="rounded-lg overflow-hidden lg:mx-52 sm:m-0">
       <img :src="item" class="w-full" draggable="false">
     </UCarousel>
